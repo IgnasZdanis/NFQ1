@@ -3,7 +3,5 @@
 {% block body %}
     <h1>Hello, {{ app.user.username }}</h1>
     <img src="{{ app.user.email | gravatar }}" alt="User logo" />
-    <a href="{{ path('fos_user_security_logout') }}">
-        {{ 'layout.logout'|trans({}, 'FOSUserBundle') }}
-    </a>
+    <a href="{{ path('fos_user_security_logout') }}">Log Out</a>
 {% endblock %}
