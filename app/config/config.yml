@@ -75,3 +75,12 @@ fos_user:
     from_email:
         address: "asd@asd.com"
         sender_name: "Ignas"
+
+easy_admin:
+    entities:
+        User:
+            class: AppBundle\Entity\User
+            list:
+                fields: ['id', 'username', 'email',  {property: 'gravatar', type: 'image' }, 'enabled', 'lastLogin']
+                actions: ['edit', 'search', 'show', 'delete']
+        #- AppBundle\Entity\User
