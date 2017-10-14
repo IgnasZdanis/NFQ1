@@ -2,4 +2,5 @@
 {% block title %}About{% endblock %}
 {% block body %}
     <h1>Hello, {{ app.user.username }}</h1>
+    <img src="{{ app.user.email | gravatar }}" alt="User logo" />
 {% endblock %}
