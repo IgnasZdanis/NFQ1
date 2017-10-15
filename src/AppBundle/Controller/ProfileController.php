@@ -4,7 +4,6 @@ namespace AppBundle\Controller;
 
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Symfony\Component\HttpFoundation\Request;
 
 class ProfileController extends Controller
 {
@@ -12,7 +11,7 @@ class ProfileController extends Controller
     /**
      * @Route("/about", name="about_page")
      */
-    public function aboutAction(Request $request)
+    public function aboutAction()
     {
         /*
         if (!$this->get('security.authorization_checker')->isGranted('IS_AUTHENTICATED_FULLY')) {
