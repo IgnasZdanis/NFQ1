@@ -3,8 +3,8 @@
 {% block body %}
     <h1>Hello, {{ app.user.username }}</h1>
     <img src="{{ app.user.email | gravatar }}" alt="User logo" />
-    <a href="{{ path('fos_user_security_logout') }}">Log Out</a>
+    <p><a href="{{ path('fos_user_security_logout') }}">Log Out</a></p>
     {% if is_granted('ROLE_ADMIN') %}
-        <a href="{{ path('easyadmin') }}">Admin</a>
+        <p><a href="{{ path('easyadmin') }}">Admin</a></p>
     {% endif %}
 {% endblock %}
