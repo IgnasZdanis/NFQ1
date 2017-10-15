@@ -19,6 +19,6 @@ class ProfileController extends Controller
         }
         */
         //$username = $request->getUser();
-        return $this->render('AppBundle::about.html.twig');
+        return $this->render('about.html.twig');
     }
 }

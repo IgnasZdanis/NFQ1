@@ -1,0 +1,16 @@
+input {
+    margin-bottom: 10px;
+}
+input, label {
+    display:block;
+}
+.checkboxLabel{
+    display:flex;
+}
+.checkboxLabel input{
+    margin-right: 10px;
+}
+img {
+    float: left;
+    margin-right: 10px;
+}

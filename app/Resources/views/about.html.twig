@@ -1,0 +1,16 @@
+{% extends "::base.html.twig" %}
+{% block stylesheets %}
+    <link href="{{ asset('css/Style.css') }}" type="text/css" rel="stylesheet"
+{% endblock %}
+{% block title %}About{% endblock %}
+{% block body %}
+    <h2>Hello, {{ app.user.username }}</h2>
+    <img src="{{ app.user.email | gravatar }}" alt="User logo" />
+    Username: {{ app.user.username }} <br/>
+    Email: {{ app.user.email }} <br/>
+    <a href="{{ path('fos_user_security_logout') }}">Log Out</a> <br/>
+    {% if is_granted('ROLE_ADMIN') %}
+        <a href="{{ path('easyadmin') }}">Admin tools</a>
+    {% endif %}
+
+{% endblock %}
