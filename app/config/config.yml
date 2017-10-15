@@ -89,4 +89,18 @@ easy_admin:
                     - 'enabled'
                     - 'lastLogin'
                 actions: ['edit', 'search', 'show', 'delete']
+            edit:
+                fields:
+                    - 'username'
+                    - 'email'
+                    - 'enabled'
+                    - 'lastLogin'
+                    - 'roles'
+            show:
+                fields:
+                    - 'username'
+                    - 'email'
+                    - 'enabled'
+                    - 'lastLogin'
+                    - 'roles'
         #- AppBundle\Entity\User
