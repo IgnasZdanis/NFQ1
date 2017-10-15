@@ -25,10 +25,7 @@ class User extends BaseUser
     protected $id;
 
     public function getGravatar() {
-        $email = $this->email;
-        $email = trim($email);
-        $email = strtolower($email);
-        return "https://www.gravatar.com/avatar/" . md5( $email );
+        return $this->email;
     # ...
     }
 }

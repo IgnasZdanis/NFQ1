@@ -81,6 +81,12 @@ easy_admin:
         User:
             class: AppBundle\Entity\User
             list:
-                fields: ['id', 'username', 'email',  {property: 'gravatar', type: 'image' }, 'enabled', 'lastLogin']
+                fields:
+                    - 'id'
+                    - 'username'
+                    - 'email'
+                    - {property: gravatar, template: 'gravatar.html.twig' }
+                    - 'enabled'
+                    - 'lastLogin'
                 actions: ['edit', 'search', 'show', 'delete']
         #- AppBundle\Entity\User
